@@ -8,6 +8,14 @@ En la carpeta **No_me_dio_tiempo** hay mas contenido y con ejemplos simples.
 Se utiliza para declarar **atributos y métodos** que deben ser accesibles desde otros métodos de la clase. 
 Es como ponerles ```public``` a las variables, tambien podremos acceder a ellas sin pasarlas como parametro
 
+## Imagenes
+
+```
+        labelImagen = QLabel()
+        pixmap = QPixmap("/home/dam/Descargas/jpeg(2)")
+        labelImagen.setPixmap(pixmap)
+        labelImagen.setScaledContents(True)
+```
 
 ## QWidget
 
