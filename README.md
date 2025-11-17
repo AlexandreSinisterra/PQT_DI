@@ -59,6 +59,7 @@ Metodos que se podrian utilizar en las funciones:
 - ```.text()``` : Para recoger el texto de un widget (con ```.strip()``` eliminamos espacios)
 - ```.setPlainText("")```: Para cambiar el texto (tambien sirve sin el plain)
 - ```.append("")```: para agregar texto
+- ```.setChecked(false/true)```: cambiar si esta seleccionado
 ## Scroll
 ```
 scroll_area = QScrollArea() 
