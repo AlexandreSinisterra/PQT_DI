@@ -33,6 +33,9 @@ Se añaden con ```addWidget(el_widget)```
   - ```addItems(["Rojo", "Verde", "Azul"])```
 - ```QTabWidget```: Para pestañas
   - ```addTab(Widget, "nombre")```
+- ```QButtonGroup()```: grupo de botones (si se le pasa self, actuara el exclusive solo dentro del grupo)
+  - ```addButton```: añade boton
+  - ```setExclusive(True)```: solo puede haber 1 activado a la vez, o se desmarcan
 
 Esto no es un widget pero con ```.addStretch()``` podemos dejar un espacio en blanco
 ### Funciones
