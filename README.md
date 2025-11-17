@@ -31,6 +31,8 @@ Se añaden con ```addWidget(el_widget)```
   - ```setPlaceholderText```: Texto que se ve cuando no hay nada
 - ```QComboBox```: Desplegable de opciones
   - ```addItems(["Rojo", "Verde", "Azul"])```
+- ```QTabWidget```: Para pestañas
+  - ```addTab(Widget, "nombre")```
 
 Esto no es un widget pero con ```.addStretch()``` podemos dejar un espacio en blanco
 ### Funciones
