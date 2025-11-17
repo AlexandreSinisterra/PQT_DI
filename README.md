@@ -26,8 +26,11 @@ Se añaden con ```addWidget(el_widget)```
 - ```QPushButton```: Boton
 - ```QRadioButton```: Los circulitos de seleccion
 - ```QCheckBox```: Checkbox
-- ```QLineEdit```: Para escribir  
-```setPlaceholderText```: Texto que se ve cuando no hay nada
+- ```QTextEdit```: Para escribir  
+- ```QLineEdit```: Para escribir linea
+  - ```setPlaceholderText```: Texto que se ve cuando no hay nada
+- ```QComboBox```: Desplegable de opciones
+  - ```addItems(["Rojo", "Verde", "Azul"])```
 
 Esto no es un widget pero con ```.addStretch()``` podemos dejar un espacio en blanco
 ### Funciones
@@ -41,6 +44,7 @@ Los widgets tienen diferentes acciones que pueden hacer un connect:
 - ```QPushButton```: clicked
 - ```QRadioButton```: toggled
 - ```QCheckBox```: stateChanged
+- ```QComboBox```: currentIndexChanged y currentTextChanged
 
 A la hora de escribir al función, uno de los parámetros que escribiremos aunque no se pasa directamente es ```self```:
  Un ejemplo (```def cambiar_color(self, color1, color2, color3, check):```)
@@ -48,7 +52,8 @@ A la hora de escribir al función, uno de los parámetros que escribiremos aunqu
 Metodos que se podrian utilizar en las funciones:
 
 - ```.text()``` : Para recoger el texto de un widget (con ```.strip()``` eliminamos espacios)
-
+- ```.setPlainText("")```: Para cambiar el texto (tambien sirve sin el plain)
+- ```.append("")```: para agregar texto
 ## Scroll
 ```
 scroll_area = QScrollArea() 
