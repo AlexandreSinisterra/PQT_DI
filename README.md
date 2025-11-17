@@ -44,6 +44,10 @@ Se añaden con ```addWidget(el_widget)```
 - ```QButtonGroup()```: grupo de botones (si se le pasa self, actuara el exclusive solo dentro del grupo)
   - ```addButton```: añade boton
   - ```setExclusive(True)```: solo puede haber 1 activado a la vez, o se desmarcan
+- ```QSplitter(Qt.Orientation.Horizontal)```: contenedor que separa dos paneles
+- ```QSlider(Qt.Orientation.Horizontal)```: barrita deslizante
+  - ```setRange(0, 100)```
+  - ```setValue(50)```
 
 Esto no es un widget pero con ```.addStretch()``` podemos dejar un espacio en blanco
 ### Funciones
