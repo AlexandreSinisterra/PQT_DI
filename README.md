@@ -100,4 +100,4 @@ widget
 - ```QStackedLayout```: Solo aparece 1 widget a la vez.
 ```setCurrentIndex(x)``` Se selecciona el widget que se ve.  
 ```currentWidget()``` se indica el widget actual.
-
+- ```QGridLayout```: al añadir los widgets se tienen que colocal las posiciones ej: addWidget(QLabel("Apelidos"), row, 1)
